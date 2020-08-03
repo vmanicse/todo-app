@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ToDo App</title>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.png">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" defer src="script.js"></script>
+	<script type="text/javascript" src="https://kit.fontawesome.com/079e1d71ea.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<div id="intro-screen">
+			<div id="intro-screen-bg">
+                <img src="list.svg" alt=" " width="150px" height="200px"/>
+            </div>
+            <div id="intro-screen-textarea">
+                <strong style="color: #af4448;">Get Organised Your Life</strong>
+                <p>DoTo is a simple and effective to-do list and task manager app which helps you manage time.</p>
+            </div>
+            <div id="intro-screen-button">
+                <button onclick="getStart()">Get Started</button>
+            </div>
+		</div>
+	<div id="task-manager">
+		<div id="info">
+			<strong style="color: #af4448;">Hello dear user!</strong>
+			<i class="fas fa-home" style="color: #af4448; font-size: 25px; float: right; cursor: pointer;"></i>
+            <p id="date"></p>
+        </div>
+        <div id="list-container-area">
+        	<div class="info" style="padding-bottom: 25px;">
+            	<strong style="color: #af4448;">Your ToDo list</strong>
+            </div>
+            <form id="add-task">
+       			<input type="text" name="add-task" placeholder="Add new task in your list..." maxlength="75" autofocus>
+            </form>
+            <div class="clearfix"></div>
+            <div id="list">
+            	<ul></ul>
+            </div>
+            <div id="menu" style="margin: 2% auto">
+            	<input class="search" name="q" type="text" placeholder="Search...">
+                <button class="delete-all">Delete All</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

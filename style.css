@@ -1,0 +1,132 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	font-family: serif;
+	font-size: 1em;
+}
+
+#intro-screen {
+    width: 80%;
+    margin: auto;
+    line-height: 1.5em;
+    text-align: center;
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+}
+
+#intro-screen > div {
+    margin: 3% auto;
+}
+
+#intro-screen-bg {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #f1d13b;
+}
+
+#intro-screen-button > button {
+    width: 200px;
+    height: 50px;
+    border: none;
+    font-weight: bold;
+    border-radius: 10px;
+    color: #fff;
+    background-image: linear-gradient(to left, #47876d, #4c9e94);
+    cursor: pointer;
+}
+
+#task-manager {
+    display: none;
+    width: 100%;
+    margin: auto;
+    padding: 20px;
+    font-weight: bold;
+}
+
+#task-manager #list-container-area{
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+    padding: 20px;
+    font-weight: bold;
+}
+
+#list-container-area #add-task input[type="text"] {
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    float: left;
+    margin: auto;
+    border: 2px solid #ffe082;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+#list-container-area ul {
+    list-style: none;
+    background-color: #ffe082;
+    border-radius: 20px;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+#list-container-area ul li {
+    padding: 10px;
+    cursor: pointer;
+}
+
+#list ul > li:hover .task-name {
+    color: #af4448;
+    transition: 0.5s;
+}
+
+#list ul > li:hover .fa-trash-alt {
+    color: #af4448;
+    transition: 0.5s;
+}
+
+#list ul > li i {
+    width: 20px;
+    height: 20px;
+    float: right;
+}
+
+#menu button {
+    height: 30px;
+    float: right;
+    border: none;
+    border-radius: 5px;
+    float: right;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+    background-color: #af4448;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+#menu .search {
+    float: left;
+    width: 40%;
+    height: 30px;
+    padding: 10px;
+    margin: auto;
+    border: 1px solid #ffe082;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+#menu input[type="text"]:focus {
+    width: 60%;
+}
+
+.clearfix {
+	content: "";
+	clear: both;
+	display: table;
+}
