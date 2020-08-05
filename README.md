@@ -1,2 +1,2 @@
-# ToDo-App
+# todo-app
 A simple JavaScript ToDo app.
